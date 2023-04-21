@@ -1,0 +1,40 @@
+body{
+    color-scheme: dark;
+    background-color: rgb(13, 13, 21);
+    text-align: center;
+    color: white;
+    font-family: cursive, sans-serif;
+}
+.cells{
+    display: grid;
+    max-width: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,100px);
+    margin-inline: auto;
+}
+.cell{
+    border: 2px solid rgb(129, 22, 228);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+#game-mode{
+    width: 300px;
+    padding: .5rem;
+    background-color: rgb(129, 22, 228);
+    border: 2px solid white;
+    border-radius: 1rem;
+    font-family: cursive, sans-serif;
+}
+.status-text{
+    margin-block: 1rem;
+    font-size: 2rem;
+}
+.reset-btn{
+    padding: .5rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
